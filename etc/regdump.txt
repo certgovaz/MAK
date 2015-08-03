@@ -1,0 +1,4 @@
+hklm_run->HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+hklm_runonce->HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
+rename_files->HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RenameFiles->Keys
+ifeo->HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options->Keys

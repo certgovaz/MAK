@@ -1,0 +1,47 @@
+from ctypes import *
+from cc import *
+
+OpenProcess = windll.kernel32.OpenProcess
+OpenThread = windll.kernel32.OpenThread
+TerminateThread = windll.kernel32.TerminateThread
+CloseHandle = windll.kernel32.CloseHandle
+CreateToolhelp32Snapshot = windll.kernel32.CreateToolhelp32Snapshot
+Process32First = windll.kernel32.Process32First
+Process32Next = windll.kernel32.Process32Next
+Module32First = windll.kernel32.Module32First
+Module32Next = windll.kernel32.Module32Next
+Thread32First = windll.kernel32.Thread32First
+Thread32Next = windll.kernel32.Thread32Next
+GetProcessTimes = windll.kernel32.GetProcessTimes
+GetProcessDEPPolicy = windll.kernel32.GetProcessDEPPolicy
+ReadProcessMemory = windll.kernel32.ReadProcessMemory
+OpenEvent = windll.kernel32.OpenEventA
+SetEvent = windll.kernel32.SetEvent
+ZwTerminateProcess = windll.ntdll.ZwTerminateProcess
+DebugActiveProcess = windll.kernel32.DebugActiveProcess
+NtQueryInformationProcess = windll.ntdll.NtQueryInformationProcess
+NtQueryInformationThread = windll.ntdll.NtQueryInformationThread
+NtReadVirtualMemory = windll.ntdll.NtReadVirtualMemory
+QueryFullProcessImageName = windll.kernel32.QueryFullProcessImageNameW
+FileTimeToSystemTime = windll.kernel32.FileTimeToSystemTime
+SystemTimeToTzSpecificLocalTime = windll.kernel32.SystemTimeToTzSpecificLocalTime
+ZwQuerySystemInformation = windll.ntdll.ZwQuerySystemInformation
+DuplicateHandle = windll.kernel32.DuplicateHandle
+GetCurrentProcess = windll.kernel32.GetCurrentProcess
+NtQueryObject = windll.ntdll.NtQueryObject
+GetCurrentDirectoryW = windll.kernel32.GetCurrentDirectoryW
+SetCurrentDirectoryW = windll.kernel32.SetCurrentDirectoryW
+FindFirstFile = windll.kernel32.FindFirstFileW
+FindNextFile = windll.kernel32.FindNextFileW
+FindClose = windll.kernel32.FindClose
+Debug = windll.kernel32.OutputDebugStringW
+EnumDeviceDrivers = windll.psapi.EnumDeviceDrivers
+GetDeviceDriverFileNameA = windll.psapi.GetDeviceDriverFileNameA
+CreateFile = windll.kernel32.CreateFileW
+MiniDumpWriteDump = windll.DbgHelp.MiniDumpWriteDump
+GetModuleInformation = windll.psapi.GetModuleInformation
+GetTcpTable = windll.iphlpapi.GetTcpTable
+GetUdpTable = windll.iphlpapi.GetUdpTable
+OpenSCManager = windll.advapi32.OpenSCManagerA
+EnumServicesStatus = windll.advapi32.EnumServicesStatusA
+GetAdaptersInfo = windll.iphlpapi.GetAdaptersInfo
